@@ -126,7 +126,7 @@ const User = () => {
                 {blog.author === username && (
                   <button
                     onClick={() => openDeleteModal(blog)}
-                    className="text-red-800 mt-8 shadow-xl border-2 border-stone-100 w-10 h-10  bg-white rounded-full absolute right-5 lg:right-60 z-30 "
+                    className="text-red-800 mt-8 shadow-xl border-2 border-stone-100 w-10 h-10  bg-white rounded-full absolute right-5 lg:right-60 z-10 "
                   >
                     <DeleteRoundedIcon />
                   </button>
@@ -147,7 +147,7 @@ const User = () => {
       </div>
       {showDeleteModal && (
         <div className="fixed inset-0 flex items-center justify-center bg-gray-800 bg-opacity-50">
-          <div className="bg-white p-8 max-w-md mx-auto rounded-lg shadow-lg">
+          <div className="bg-white p-8 max-w-md mx-auto rounded-lg shadow-lg z-40">
             <h2 className="text-xl font-bold mb-4">Delete Blog</h2>
             <p>Are you sure you want to delete this blog?</p>
             <div className="mt-4 flex justify-end">
