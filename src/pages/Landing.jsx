@@ -3,8 +3,11 @@ import Logo from "../assets/beetle2.svg";
 import illustration from "../assets/Designer__7_-removebg.png";
 import { Link } from "react-router-dom";
 import grid from "./../assets/Vectorgf.png";
-import hero from "./../assets/Redefine perspectives.png";
-import buttonimg from "./../assets/Group 15.png";
+import hero from "./../assets/Redefine perspectives real.svg";
+import buttonimg from "./../assets/black btn.svg";
+import categories from "./../assets/Group 17.png";
+import hero2 from "./../assets/Redefine perspectives.svg";
+
 const Landing = () => {
   return (
     <div className="bg-stone-900">
@@ -23,13 +26,24 @@ const Landing = () => {
             </div>
             <Link to="/signin">
               <div className="flex items-center justify-center">
-                <img src={buttonimg} alt="" className="h-9 w-22 mt-16" />
+                <img src={buttonimg} alt="" className="h-12 w-32 mt-16" />
               </div>
             </Link>
           </div>
         </div>
-        <img src={grid} alt="" />
+        <img src={grid} alt="" className="w-full" />
       </section>
+      <section className="flex flex-col justify-center items-center">
+        <img src={hero2} alt="" />
+        <img src={categories} alt="" className="mt-10" />
+        <p className="text-white text-lg font-title mt-10 w-96 text-center">
+          We provide you with minimalistic and clutter free experience so you
+          can express yourself your way
+        </p>
+      </section>
+      <footer className="flex justify-center items-center">
+        <img src={Logo} alt="" className="py-20 mt-20" />
+      </footer>
     </div>
   );
 };
